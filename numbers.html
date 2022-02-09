@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .maindivision {
+            margin: auto;
+            height: 200px;
+            width: 500px;
+            border: 2px solid gray;
+            margin-top: 50px;
+        }
+        
+        #number {
+            margin-top: 50px;
+            height: 40px;
+            width: 200px;
+            background-color: rgba(128, 128, 128, 0.137);
+            border: 1px solid gray;
+            text-align: center;
+            margin-left: 30px;
+        }
+        
+        #message {
+            margin-left: 30px;
+            color: teal;
+        }
+        
+        button {
+            height: 40px;
+            width: 150px;
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            border: none;
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindivision">
+        <input type="text" id="number">
+        <button type="button" onclick="slab()">clickme</button>
+        <h1 id="message"></h1>
+    </div>
+
+    <script>
+        function slab() {
+            let num = parseInt(document.getElementById("number").value);
+            let output = document.getElementById("message");
+            if (num == 0 && num <= 10) {
+                output.innerText = "This Number is in 0 to 10 slab";
+            } else if (num == 11 && num <= 20) {
+                output.innerText = "This Number is in 11 to 20 slab";
+
+            } else if (num >= 21 && num <= 30) {
+                output.innerText = "This Number is in 21 to 30 slab";
+
+            } else if (num >= 31 && num <= 40) {
+                output.innerText = "This Number is in 31 to 40 slab";
+
+            } else if (num >= 41 && num <= 50) {
+                output.innerText = "This Number is in 41 to 50 slab";
+
+            } else if (num >= 51 && num <= 60) {
+                output.innerText = "This Number is in 51 to 60 slab";
+
+            } else if (num >= 61 && num <= 70) {
+                output.innerText = "This Number is in 61 to 70 slab";
+
+            } else if (num >= 71 && num <= 80) {
+                output.innerText = "This Number is in 71 to 80 slab";
+
+            } else if (num >= 81 && num <= 90) {
+                output.innerText = "This Number is in 81 to 90 slab";
+
+            } else if (num >= 91 && num <= 100) {
+                output.innerText = "This Number is in 91 to 100 slab";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
